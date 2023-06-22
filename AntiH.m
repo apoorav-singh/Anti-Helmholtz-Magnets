@@ -5,14 +5,15 @@ clear all;
 close all;
 
 npts=2000;
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %   User defined parameters in between the lines
 
-N_L = 3;                        %Number of coils vertically
-N_r = 3;                        %Number of coils radially
-I = 50;                        %current in amps
-t = 0.067 * 2.54;            %diameter of coated wire - 16 gauge wire
-r_ave = 2.25 * 2.54;            %interior radius in cm
+N_L = 5;                        %Number of coils vertically
+N_r = 20;                        %Number of coils radially
+I = 3;                        %current in amps [A]
+t = 0.1;            %diameter of coated wire - 16 gauge wire [cm]
+r_ave = 5 * 2.54;            %interior radius in [cm]
 L = r_ave;          %distance of center coils for Anti-Helmholtz
                                 %configuration. 
 
@@ -37,20 +38,34 @@ plot(z,B);
 set(fid1,'Position',[41 578 560 420]);
 xlabel('z- cm'); ylabel('B(z)- G');
 title('B');
+grid("on")
+grid("minor")
 
 fid2=figure;
 plot(z(1:length(z)-1),diff(B)./diff(z))
 set(fid2,'Position',[43 84 560 420]);
-xlabel('z- cm'); ylabel('dB/dz- G/cm');
-title('dB');
+xlabel('z- cm')
+ylabel('dB/dz- G/cm')
+t_1 = title("$\frac{dB}{dz}$",'interpreter','latex');
+t_1.FontSize = 20;
+grid("on")
+grid("minor")
 
 fid3=figure;
 plot(z(1:length(z)-2),diff(diff(B))./diff(z(1:length(z)-1)).^2)
+xlabel('z- cm')
+t_2 = title("$\frac{d^2B}{dz^2}$",'interpreter','latex');
+t_2.FontSize = 20;
+grid("on")
+grid("minor")
 
-% fid4=figure;
-% plot(z(1:length(z)-3),diff(diff(diff(B)))./diff(z(1:length(z)-2)).^2)
-% title('Third derivative')
-
+fid4=figure;
+plot(z(1:length(z)-3),diff(diff(diff(B)))./diff(z(1:length(z)-2)).^2)'
+xlabel('z- cm')
+t_3 = title("$\frac{d^3B}{dz^3}$",'interpreter','latex');
+t_3.FontSize = 20;
+grid("on")
+grid("minor")
 
 coil_area = pi * (t/2)^2;
 N_t = 2*(N_L * N_r);
