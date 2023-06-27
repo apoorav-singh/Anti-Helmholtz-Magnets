@@ -27,8 +27,8 @@ Length of between two coils*: 10 cm
 
 These two set of coils were kept in Anti-Helmholtz configuration. The data collected in the experiment is given in the table below.
 
-<p align="center">
 
+<p align="center">
 | Sr. No. | Z [cm]  | Magnetic Field (mGauss) |
 | :-------| :-----: | ---------------------:  |
 | 01      |   0.5   | -19.5                   |
@@ -44,9 +44,11 @@ These two set of coils were kept in Anti-Helmholtz configuration. The data colle
 | 11      |   8.0   |  11.2                   |
 | 12      |   9.0   |  15.8                   |
 | 13      |  10.0   |  19.5                   |
+</p>
 
 
-<img src="img/Plot.png" width="50%" height="50%">
+<p align="center">
+<img src="img/Plot.png" width="100%" height="100%">
 </p>
 
 Here is the plot of the data with theoretical fit using this code. Note that for the plotting purpose I have subtracted the "Z" with 5 cm so it aligns with theoretical plot. Red circles are the data collected in the experiment and blue line represents the plot from theoretical fit.
