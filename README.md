@@ -12,7 +12,7 @@ Radial Turns: 18\
 Current: 1 A\
 Radius of the Coil Holder: 4 cm\
 Diameter of the Wire: 3 mm\
-Length of between two coils*: 10 cm\
+Length of between two coils*: 10 cm
 
 <p align="center">
 <img src="img/front.jpeg" width="30%" height="30%">
