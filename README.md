@@ -14,15 +14,20 @@ Radius of the Coil Holder: 4 cm
 Diameter of the Wire: 3 mm
 Length of between two coils*: 10 cm
 
+<p align="center">
 <img src="img/front.jpeg" width="50%" height="50%">
 <img src="img/side.jpeg" width="50%" height="50%">
+</p>
 
 *Caution: In here, I have mentioned the distance between surfaces of the coils. But the distance you need to enter in this code will be from the center of the coils. Therefore few cm are added. Hence, length between two coils in this case becomes 1.6 cm + 10 + 1.6 cm = 13.2 cm as shown in the figure below:
 
+<p align="center">
 <img src="img/coils.png" width="50%" height="50%">
-
+</p>
 
 These two set of coils were kept in Anti-Helmholtz configuration. The data collected in the experiment is given in the table below.
+
+<p align="center">
 
 | Sr. No. | Z [cm]  | Magnetic Field (mGauss) |
 | :-------| :-----: | ---------------------:  |
@@ -40,6 +45,9 @@ These two set of coils were kept in Anti-Helmholtz configuration. The data colle
 | 12      |   9.0   |  15.8                   |
 | 13      |  10.0   |  19.5                   |
 
-Here is the plot of the data with Theoretical fit using this code. Note that for the plotting purpose I have subtracted the "Z" with 5 cm so it aligns with theoretical plot. Red circles are the data collected in the experiment and blue line represents the plot from theoretical fit.
 
-<img src="img/plot.png" width="50%" height="50%">
+<img src="img/Plot.png" width="50%" height="50%">
+</p>
+
+Here is the plot of the data with theoretical fit using this code. Note that for the plotting purpose I have subtracted the "Z" with 5 cm so it aligns with theoretical plot. Red circles are the data collected in the experiment and blue line represents the plot from theoretical fit.
+
