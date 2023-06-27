@@ -43,6 +43,7 @@ These two set of coils were kept in Anti-Helmholtz configuration. The data colle
 | 12      |   9.0   |  15.8                   |
 | 13      |  10.0   |  19.5                   |
 
+# Plot
 
 <p align="center">
 <img src="img/Plot.png" width="100%" height="100%">
